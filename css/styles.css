@@ -1,0 +1,86 @@
+/* All elements */
+
+body {
+  font-family: "Tahoma";
+  font-size: 19px;
+  background-color: #e4e4e4;
+}
+
+nav li,
+h1,
+h2,
+h3 {
+  font-family: "Rockwell", "Verdana", "sans-serif";
+  font-stretch: condensed;
+  font-weight: bold;
+}
+
+nav li,
+h1 {
+  font-size: 37px;
+}
+
+/* Header, navbar */
+
+header,
+.searchAndIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #dddddd;
+}
+
+nav li {
+  display: inline-block;
+  margin: 30px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+header {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-height: 40vh;
+}
+
+header label {
+  font-size: 1.7em;
+}
+.user-and-cart img {
+  height: 2.3em;
+}
+
+.user-and-cart {
+  margin-left: 15px;
+}
+
+#search {
+  font-size: 1.3em;
+  border-radius: 25px;
+}
+
+.search,
+::placeholder,
+a {
+  color: #46718c;
+  opacity: 1;
+}
+
+.active,
+.welcome {
+  color: #8c7604;
+}
+
+/* Welcome */
+
+.welcome {
+  background-image: url("../Images/rocky-mountain-stormy-sky-daytime.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  min-height: 70vh;
+  position: relative;
+}
