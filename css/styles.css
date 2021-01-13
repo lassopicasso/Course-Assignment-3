@@ -42,7 +42,7 @@ nav a {
 header {
   padding-left: 20px;
   padding-right: 20px;
-  max-height: 40vh;
+  max-height: 20vh;
 }
 
 header label {
@@ -83,4 +83,8 @@ a {
   background-position-y: center;
   min-height: 70vh;
   position: relative;
+}
+
+.welcome_content {
+  position: absolute;
 }
