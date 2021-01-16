@@ -183,6 +183,29 @@ footer {
   margin-top: 0px;
 }
 
+/*About us */
+.about_container {
+  max-width: 75vw;
+  margin: auto;
+  text-align: center;
+}
+
+.about_container__img {
+  background-image: url("../Images/man-hiking-snowy-mountains.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 60%;
+  min-height: 40vh;
+  margin: auto;
+  background-position-x: center;
+  background-position-y: center;
+  box-shadow: 0px 3px 6px;
+}
+
+.about_container span {
+  font-weight: bold;
+}
+
 /* Footer */
 
 footer {
@@ -254,5 +277,9 @@ footer li {
   .header__nav li {
     padding-right: 10px;
     padding-left: 10px;
+  }
+
+  .about_container__img {
+    background-position-x: left;
   }
 }
