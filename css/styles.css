@@ -170,6 +170,19 @@ footer {
   color: red;
 }
 
+/* Product list */
+
+.product_overview__top {
+  grid-column: -1/1;
+}
+.product_overview p {
+  margin-top: 1px;
+  margin-bottom: 0px;
+}
+.product_overview h1 {
+  margin-top: 0px;
+}
+
 /* Footer */
 
 footer {
@@ -225,7 +238,7 @@ footer li {
   }
 }
 
-/* Iphone to Iphone 6/7/8  */
+/* Iphone 6/7/8  */
 
 @media only screen and (max-width: 600px) {
   .product_overview {
