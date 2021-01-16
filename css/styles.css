@@ -81,7 +81,6 @@ a {
   font-size: 1em;
   padding-left: 10px;
   border-radius: 25px;
-  background-color: #dddddd;
   width: 150px;
 }
 
@@ -93,6 +92,14 @@ header,
 footer {
   padding-left: 20px;
   padding-right: 20px;
+  background-color: #dddddd;
+}
+
+header,
+footer,
+.switchboard,
+.person,
+#search {
   background-color: #dddddd;
 }
 /* Welcome */
@@ -183,6 +190,55 @@ footer {
   margin-top: 0px;
 }
 
+/* Contact */
+
+.switchboard,
+.person {
+  border: 2px solid#46718c;
+}
+
+.switchboard {
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px solid #46718c;
+  max-width: 50vw;
+  margin: auto;
+  padding: 10px;
+  flex-wrap: nowrap;
+}
+
+.main_contact p {
+  margin: 0px;
+  padding-top: 2px;
+}
+
+.main_contact h2 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.crew {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  max-width: 75vw;
+  margin: 30px auto auto auto;
+  grid-gap: 10px;
+}
+
+.person {
+  display: flex;
+  justify-content: space-around;
+}
+
+.person img {
+  width: 90px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 20%;
+}
+
 /*About us */
 .about_container {
   max-width: 75vw;
@@ -259,6 +315,17 @@ footer li {
     width: 70px;
     height: auto;
   }
+  .switchboard {
+    flex-direction: column;
+    width: 40vw;
+  }
+
+  .switchboard-info h2 {
+    margin-top: 10px;
+  }
+  .crew {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Iphone 6/7/8  */
@@ -281,5 +348,9 @@ footer li {
 
   .about_container__img {
     background-position-x: left;
+  }
+
+  .switchboard {
+    width: 50vw;
   }
 }
