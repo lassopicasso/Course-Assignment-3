@@ -109,7 +109,9 @@ footer,
 .switchboard,
 .person,
 #search,
-button {
+button,
+input,
+.checkout-successful {
   background-color: #dddddd;
 }
 /* Welcome */
@@ -344,6 +346,83 @@ footer li {
   margin: 20px;
 }
 
+/* Shopping cart and Checkout */
+/*Shopping cart*/
+.cart-checkout {
+  display: flex;
+  max-width: 75vw;
+  margin: 10px auto;
+  align-content: center;
+}
+
+.cart-checkout > * {
+  flex: 1;
+}
+.cart-headers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-jacket-details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cart-jacket-details img {
+  width: 20%;
+  object-fit: contain;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  border-top: 1px solid #707070;
+  align-items: flex-end;
+}
+
+.cart-checkout-button {
+  display: flex;
+  justify-content: space-around;
+  max-width: 75vw;
+  margin: 10px auto;
+
+  align-content: center;
+}
+/*Payment*/
+
+.checkout h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.personal-info,
+.payment-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.payment-info img {
+  width: 137px;
+  height: auto;
+}
+
+/*Checkout Successful*/
+
+.checkout-successful {
+  border: 2px solid #46718c;
+  margin: 40px auto;
+  width: 30%;
+  padding: 10px;
+  box-shadow: 0px 3px 6px;
+  text-align: center;
+}
+.checkout-successful-header {
+  color: #05bf4a;
+}
+
 /* Smaller desktop and landscape notepad */
 @media only screen and (max-width: 1100px) {
   body {
@@ -367,7 +446,7 @@ footer li {
     margin: 0rem -1rem -1rem -2.5rem;
     padding: 5px;
     border-top: 2px #46718c solid;
-
+    gap: around;
     display: flex;
     justify-content: center;
   }
@@ -394,7 +473,8 @@ footer li {
     grid-template-columns: 1fr;
   }
 
-  .product-specific {
+  .product-specific,
+  .cart-checkout {
     flex-direction: column;
   }
 }
@@ -423,5 +503,23 @@ footer li {
 
   .switchboard {
     width: 50vw;
+  }
+
+  .payment-info form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .checkout-successful {
+    width: 50%;
+  }
+  .payment-info {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50vw;
+  }
+  .payment-info img {
+    margin: auto;
   }
 }
