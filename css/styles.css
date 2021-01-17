@@ -1,4 +1,4 @@
-/* All elements */
+/* All elements or in common for multiple elements in different pages */
 
 body {
   font-family: Tahoma, Verdana, "Segoe", sans-serif;
@@ -21,11 +21,33 @@ h3 {
 
 h1 {
   text-align: center;
+  font-size: 2em;
 }
 
+header,
+footer,
+.switchboard,
+.person,
+#search,
+button,
+input,
+.checkout-successful {
+  background-color: #dddddd;
+}
+
+header,
+footer {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Links */
 a,
 .fas {
   color: #46718c;
+}
+a {
+  text-decoration: none;
 }
 
 a:hover,
@@ -34,10 +56,6 @@ a:hover,
 .welcome,
 h1 {
   color: #8c7604;
-}
-
-h1 {
-  font-size: 2em;
 }
 
 nav li,
@@ -61,7 +79,6 @@ button:hover {
 .header__content {
   display: flex;
   justify-content: space-between;
-
   align-items: center;
   flex-wrap: wrap;
 }
@@ -77,9 +94,6 @@ footer li {
 
 nav li {
   padding: 20px;
-}
-a {
-  text-decoration: none;
 }
 
 .searchAndIcons,
@@ -98,22 +112,6 @@ a {
   margin-left: 15px;
 }
 
-header,
-footer {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-header,
-footer,
-.switchboard,
-.person,
-#search,
-button,
-input,
-.checkout-successful {
-  background-color: #dddddd;
-}
 /* Welcome */
 
 .welcome {
@@ -205,8 +203,7 @@ input,
 /* Contact */
 
 .switchboard,
-.person,
-.switchboard {
+.person {
   border: 2px solid#46718c;
 }
 
@@ -277,7 +274,7 @@ input,
 /* Footer */
 
 footer {
-  margin-top: 50px;
+  margin-top: 100px;
   padding: 30px;
   display: flex;
   align-items: center;
