@@ -42,8 +42,18 @@ h1 {
 
 nav li,
 footer li,
-.fas {
+.fas,
+button {
   font-size: 1.5em;
+}
+
+button {
+  border-radius: 12px;
+}
+
+button:hover {
+  opacity: 2;
+  transform: scale(1.2);
 }
 
 /* Header*/
@@ -92,14 +102,14 @@ header,
 footer {
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #dddddd;
 }
 
 header,
 footer,
 .switchboard,
 .person,
-#search {
+#search,
+button {
   background-color: #dddddd;
 }
 /* Welcome */
@@ -330,7 +340,7 @@ footer li {
 
 .product_specific_cta {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: 20px;
 }
 
@@ -382,6 +392,10 @@ footer li {
   }
   .crew {
     grid-template-columns: 1fr;
+  }
+
+  .product-specific {
+    flex-direction: column;
   }
 }
 
