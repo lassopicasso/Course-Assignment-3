@@ -277,6 +277,63 @@ footer li {
   margin-left: -35px;
 }
 
+/* Product Specific*/
+
+.product-specific {
+  display: flex;
+  max-width: 75vw;
+  margin: 50px auto;
+  align-items: center;
+}
+
+.product-specific > * {
+  flex: 1;
+}
+
+.product-specific__details {
+  padding: 0px 30px;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.product-image_thumbnails {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.size,
+.color {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+}
+.size div,
+.color div {
+  vertical-align: middle;
+  padding-bottom: 2px;
+}
+
+.color {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.product_specific_cta {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
 /* Smaller desktop and landscape notepad */
 @media only screen and (max-width: 1100px) {
   body {
